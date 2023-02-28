@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+        <p>Made by iAmNyf</p>
+      <div class="display">
+        <input type="text" id="result" disabled>
+      </div>
+      <div class="button-row">
+        <button class="button" onclick="clearResult()">C</button>
+        <button class="button" onclick="backspace()">CE</button>
+        <button class="button" onclick="updateResult('/')">/</button>
+        <button class="button" onclick="updateResult('*')">*</button>
+      </div>
+      <div class="button-row">
+        <button class="button" onclick="updateResult('7')">7</button>
+        <button class="button" onclick="updateResult('8')">8</button>
+        <button class="button" onclick="updateResult('9')">9</button>
+        <button class="button" onclick="updateResult('-')">-</button>
+      </div>
+      <div class="button-row">
+        <button class="button" onclick="updateResult('4')">4</button>
+        <button class="button" onclick="updateResult('5')">5</button>
+        <button class="button" onclick="updateResult('6')">6</button>
+        <button class="button" onclick="updateResult('+')">+</button>
+      </div>
+      <div class="button-row">
+        <button class="button" onclick="updateResult('1')">1</button>
+        <button class="button" onclick="updateResult('2')">2</button>
+        <button class="button" onclick="updateResult('3')">3</button>
+        <button class="button" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
